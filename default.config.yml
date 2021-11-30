@@ -1,8 +1,7 @@
 ---
 downloads: ~/.ansible-downloads/
-
+#sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --keep-zshrc --skip-chsh
 configure_dotfiles: true
-configure_terminal: true
 configure_osx: true
 
 # Set to 'true' to configure the Dock via dockutil.
@@ -26,17 +25,21 @@ sudoers_custom_config: ''
 
 dotfiles_repo: https://github.com/jufabeck2202/dotfiles-ansible
 dotfiles_repo_accept_hostkey: true
-dotfiles_repo_local_destination: ~/Development/GitHub/dotfiles
+dotfiles_repo_local_destination: ~/Development/dotfiles
 dotfiles_files:
   - .zshrc
   - .gitignore
   - .inputrc
   - .osx
   - .vimrc
+  - .aliases
+  - .docker-aliases
+  - .gitconfig
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
   - doxygen
+  - pure
   - gettext
   - gifsicle
   - git
@@ -353,7 +356,9 @@ gem_packages: []
 # - name: bundler
 #   state: present # present/absent/latest, default: present
 #   version: "~> 1.15.1" # default: N/A
-npm_packages: []
+npm_packages: 
+  - name: localtunnel
+  - name: nodemon
 # - name: webpack
 #   state: present # present/absent/latest, default: present
 #   version: "^2.6" # default: N/A
