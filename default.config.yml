@@ -37,7 +37,9 @@ dotfiles_files:
   - .gitconfig
 
 homebrew_installed_packages:
-  # - ansible # Installed via Pip.
+  # zsh packages
+  - history-substring-search     
+  - zsh-autosuggestions
   - doxygen
   - pure
   - gettext
