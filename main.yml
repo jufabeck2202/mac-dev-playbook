@@ -19,8 +19,6 @@
     - role: elliotweiser.osx-command-line-tools
     - role: geerlingguy.mac.homebrew
       tags: ['homebrew']
-    # - role: gantsign.oh-my-zsh
-    #   tags: ["ohmyzsh"]
     - role: geerlingguy.dotfiles
       when: configure_dotfiles
       tags: ['dotfiles']

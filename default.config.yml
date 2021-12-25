@@ -16,11 +16,9 @@ dockitems_remove:
 # - Podcasts
 # - 'App Store'
 dockitems_persist: 
-# - name: "Sublime Text"
-#   path: "/Applications/Sublime Text.app/"
-#   pos: 5
-  - name: Finder
-    pos: 1
+  - name: "Visual Studio Code - Insiders"
+    path: "/Applications/Visual Studio Code - Insiders.app"
+    pos: 5
 
 configure_sudoers: false
 sudoers_custom_config: ''
@@ -41,9 +39,7 @@ dotfiles_files:
   - .aliases
   - .docker-aliases
   - .gitconfig
-
 homebrew_installed_packages:
-  # zsh packages
   - history-substring-search     
   - zsh-autosuggestions
   - doxygen
@@ -176,7 +172,6 @@ homebrew_installed_packages:
   - nmap
   - nvm
   - vtk
-  - openttd
   - pdfcpu
   - picocom
   - pipenv
@@ -230,6 +225,7 @@ homebrew_installed_packages:
   - robotsandpencils/made/xcodes
   - ubuntu/microk8s/microk8s
   - vapor/tap/vapor
+  - svn
 homebrew_taps:
   - adoptopenjdk/openjdk
   - create-go-app/cli
@@ -252,7 +248,6 @@ homebrew_taps:
   - tinygo-org/tools
   - ubuntu/microk8s
   - vapor/tap
-
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
   - chromedriver
@@ -264,7 +259,7 @@ homebrew_cask_apps:
   - transmit
   - vagrant
   - 1password
-  - adoptopenjdk8
+  - adoptopenjdk/openjdk/adoptopenjdk8
   - balenaetcher
   - dbeaver-community
   - discord
@@ -278,7 +273,6 @@ homebrew_cask_apps:
   - grandperspective
   - ishowu
   - iterm2
-  - java
   - jdownloader
   - jetbrains-toolbox
   - macdown
@@ -302,6 +296,8 @@ homebrew_cask_apps:
   - vlc
   - vscodium
   - webpquicklook
+  - bettertouchtool
+  - istat-menus
 
 
 # See `geerlingguy.mas` role documentation for usage instructions.
@@ -348,7 +344,7 @@ mas_installed_apps:
   - 409183694   
   - 1217419133  
   - 1494023538  
-mas_email: "ju-fa-beck@t-online.de"
+mas_email: ""
 mas_password: ""
 
 osx_script: "~/.osx --no-restart"
